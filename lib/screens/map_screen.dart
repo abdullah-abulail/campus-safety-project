@@ -99,7 +99,7 @@ class _MapScreenState extends State<MapScreen> {
             MaterialPageRoute(
               builder: (_) => CreateNotificationScreen(
                 location:
-                    _currentLocation, // Pass the selected location to the CreateNotificationScreen
+                    _currentLocation, // Pass the selected location to the Create_notification_screen
               ),
             ),
           );
