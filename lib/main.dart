@@ -13,7 +13,7 @@ class CampusSafetyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Campus Safety',
-
+      //second commit comments added
       //for dark mode
       theme: ThemeData.dark().copyWith(
         primaryColor: Colors.blueGrey,
