@@ -23,8 +23,6 @@ class _MapScreenState extends State<MapScreen> {
       appBar: AppBar(title: const Text('Map')),
       body: FlutterMap(
         options: MapOptions(
-          center: _currentLocation, // Focus on the current marker
-          zoom: 15,
           onTap: (tapPosition, point) {
             // Update the current location when tapped
             setState(() {
