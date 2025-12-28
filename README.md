@@ -1,7 +1,7 @@
 # Smart Campus Health and Safety Notification Application
 -Project Overview
 this project aims to improve the over all experiance on campus regarding the health and saftey and technical conserns 
-it allows teachers, students , admins to quickly report any ancident inside of the capus with real time location and descrption.
+it allows teachers, students , admins to quickly report any incident inside of the campus with real time location and descrption.
 # Features
 user : puplish reports of accidents on capus and descripe them with adding a title and followed also with a location.
 admin : change the sataus of each report  and issue instant campus wide emergncy , also termnaiting false or inappropriate notifcations.
