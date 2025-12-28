@@ -21,6 +21,7 @@ class _CreateNotificationScreenState extends State<CreateNotificationScreen> {
 
   void _save() {
     AppState.notifications.insert(
+      //here wherre we create the notification and add it to the app_state
       0,
       NotificationModel(
         id: AppState.notifications.length + 1,
@@ -37,7 +38,9 @@ class _CreateNotificationScreenState extends State<CreateNotificationScreen> {
         createdAt: DateTime.now(),
       ),
     );
-    Navigator.pop(context);
+    Navigator.pop(
+      context,
+    ); //after adding the notification we return to the last scree we were in
   }
 
   @override

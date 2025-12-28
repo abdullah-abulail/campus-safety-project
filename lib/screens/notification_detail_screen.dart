@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../models/notification_model.dart';
-import '../data/app_state.dart';
-import '../utils/helpers.dart';
+import 'package:mobile_project/models/notification_model.dart';
+import 'package:mobile_project/data/app_state.dart';
+import 'package:mobile_project/utils/helpers.dart';
 
 class NotificationDetailScreen extends StatefulWidget {
   final NotificationModel notification;

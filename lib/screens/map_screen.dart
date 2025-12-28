@@ -32,12 +32,13 @@ class _MapScreenState extends State<MapScreen> {
         ),
         children: [
           TileLayer(
-            urlTemplate: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            urlTemplate:
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', // here is the link to access the map from openstreetmap
             subdomains: const ['a', 'b', 'c'],
             userAgentPackageName: 'com.example.mobile_project',
           ),
 
-          // Marker Layer to display all markers
+          //this shows the markers on the map
           MarkerLayer(
             markers: AppState.notifications.map((n) {
               return Marker(
@@ -46,6 +47,7 @@ class _MapScreenState extends State<MapScreen> {
                 point: LatLng(n.location.lat, n.location.lng),
                 child: GestureDetector(
                   onTap: () {
+                    // when we press on the notification it send us to the notification screen
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -68,7 +70,7 @@ class _MapScreenState extends State<MapScreen> {
                         ),
                         child: Text(
                           n.title, // Displaying notification title
-                          maxLines: 1,
+                          maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
                             color: Colors.white,
@@ -93,7 +95,7 @@ class _MapScreenState extends State<MapScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          // Once the button is pressed, it will create a new notification at the current selected location
+          // Once the button is pressed, it sends us to the create notification screen
           await Navigator.push(
             context,
             MaterialPageRoute(

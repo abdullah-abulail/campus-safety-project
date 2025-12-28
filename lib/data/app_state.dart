@@ -2,8 +2,9 @@ import 'package:mobile_project/models/user.dart';
 import 'package:mobile_project/models/notification_model.dart';
 
 class AppState {
-  static User? currentUser;
+  static User? currentUser; //Stores the logged in user
 
+  //Stores all reported incidents and there is a default wrtten notification
   static List<NotificationModel> notifications = [
     NotificationModel(
       id: 1,
@@ -17,5 +18,8 @@ class AppState {
     ),
   ];
 
-  static List<int> followedNotifications = [];
+  static List<int> followedNotifications =
+      []; //here we store the followed notifications
 }
+
+//this file to share data between the screens

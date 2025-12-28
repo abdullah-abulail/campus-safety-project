@@ -1,4 +1,3 @@
-// location.dart
 class Location {
   final double lat; // Latitude
   final double lng; // Longitude
